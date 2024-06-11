@@ -3,7 +3,7 @@
     <groupId>za.co.ziemia</groupId>
     <artifactId>gcp-secretmanager-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Maven plugin to read Google Cloud Platform SecretManager secrets during a maven build, and setting them as properties for the build to use</description>
     <url>https://github.com/degerhar7/gcp-secretmanager-maven-plugin</url>
@@ -42,7 +42,8 @@
         <connection>scm:git:git://github.com/degerhar7/gcp-secretmanager-maven-plugin.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/degerhar7/gcp-secretmanager-maven-plugin.git</developerConnection>
         <url>http://github.com/degerhar7/gcp-secretmanager-maven-plugin/tree/main</url>
-    </scm>
+      <tag>gcp-secretmanager-maven-plugin-1.0.0</tag>
+  </scm>
 
     <dependencyManagement>
         <dependencies>
