@@ -106,6 +106,9 @@ public class GCPSecretManagerMojo extends AbstractMojo {
 
     /**
      * Helper method to load the actual secrets
+     *
+     * @param keys of secrets to load
+     * @return Map of key value pairs for secrets
      */
     private Map<String, String> loadSecrets(List<String> keys) {
         getLog().info("Connecting to GCP");
@@ -119,6 +122,10 @@ public class GCPSecretManagerMojo extends AbstractMojo {
 
     /**
      * Helper method to export the secret values to the current environment
+     *
+     * @param key Key of the secret
+     * @param value Value of the secret
+     * @param properties Current projetc properties
      */
     private void addToProperties(String key, String value, Properties properties) {
         if (debug) {
